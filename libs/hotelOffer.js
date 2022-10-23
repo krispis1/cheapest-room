@@ -32,6 +32,6 @@ module.exports = async (provider) => {
             }
         })
         .catch(err => {
-            return err;
+            return err.message;
         });
 }
