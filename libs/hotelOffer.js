@@ -17,9 +17,7 @@ module.exports = async (provider) => {
         adults: tripData.adults,
         children: tripData.children,
         language: tripData.language,
-        no_rooms: tripData.no_rooms,
-        price_type: tripData.price_type,
-        url: tripData.url
+        no_rooms: tripData.no_rooms
     }
 
     return axios
