@@ -23,7 +23,7 @@ module.exports = async (provider) => {
     }
 
     return axios
-        .post('https://hotel-scraper-eu.onrender.com/api/rates', request)
+        .post('https://hotel-scraper-eu.onrender.com/api/rates', request, { timeout: 60000 })
         .then(res => {
             return {
                 price: res.data.rate.priceWithTaxes,
@@ -32,6 +32,6 @@ module.exports = async (provider) => {
             }
         })
         .catch(err => {
-            console.error(err);
+            return err;
         });
 }
