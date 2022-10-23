@@ -1,0 +1,23 @@
+{
+    "provider": "agoda",
+    "server": "https://hotel-scraper-eu.onrender.com/api/",
+    "current": "booking",
+    "hotel_name": "Artagonist Art Hotel",
+    "location": "Vilnius",
+    "country": "Lithuania",
+    "address": "Pilies g. 34, Senamiestis, LT-01123 Vilnius, Lietuva",
+    "zip": "01123",
+    "coordinates": [
+      "54.68183989",
+      "25.28924991"
+    ],
+    "check_in": "2022-12-15",
+    "check_out": "2022-12-25",
+    "currency": "EUR",
+    "adults": 2,
+    "children": [],
+    "language": "lt",
+    "no_rooms": 1,
+    "price_type": "stay",
+    "url": "https://www.booking.com/hotel/lt/artagonist.lt.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaIgBiAEBmAEZuAEXyAEM2AEB6AEB-AENiAIBqAIDuALZksqaBsACAdICJGI5MTY1NzI3LThiMmQtNGI5Yy05MGYxLTA3YjhmZTdkZDFlONgCBuACAQ&sid=1715ae6a5d2389b9d9437755fd641057&all_sr_blocks=185072906_339228710_2_2_0;checkin=2022-10-28;checkout=2022-10-30;dest_id=-2620663;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=185072906_339228710_2_2_0;hpos=1;matching_block_id=185072906_339228710_2_2_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=185072906_339228710_2_2_0__25720;srepoch=1666522546;srpvid=67ee4cd82f62018a;type=total;ucfs=1&#hotelTmpl"
+  }
