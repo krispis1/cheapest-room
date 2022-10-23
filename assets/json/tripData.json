@@ -1,7 +1,4 @@
 {
-    "provider": "agoda",
-    "server": "https://hotel-scraper-eu.onrender.com/api/",
-    "current": "booking",
     "hotel_name": "Artagonist Art Hotel",
     "location": "Vilnius",
     "country": "Lithuania",

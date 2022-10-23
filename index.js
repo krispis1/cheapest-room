@@ -1,14 +1,18 @@
-const agoda = require('./modules/getAgodaPrice');
+const hotelOffer = require('./libs/hotelOffer');
 const express = require('express');
 const app = express();
 
-app.get('/', async (_, res) => {
-  res.json(await agoda());
+app.get('/agoda', async (_, res) => {
+  res.json(await hotelOffer('agoda'));
 });
 
-const server = app.listen(5253, function () {
-  var host = server.address().address;
-  var port = server.address().port;
+app.get('/booking', async (_, res) => {
+  res.json(await hotelOffer('booking'));
+});
+
+const server = app.listen(5253, () => {
+  const host = server.address().address;
+  const port = server.address().port;
   
   console.log('Example app listening at http://%s:%s', host, port);
-})
+});
