@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', async (_, res) => {
-  res.sendStatus(await agoda());
+  res.json(await agoda());
 });
 
 const server = app.listen(5253, function () {
