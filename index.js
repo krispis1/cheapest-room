@@ -1,4 +1,4 @@
-const agoda = require('./modules/getPrice');
+const agoda = require('./modules/getAgodaPrice');
 const express = require('express');
 const app = express();
 
