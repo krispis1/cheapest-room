@@ -11,3 +11,10 @@ npm install && node index.js
 * Agoda: [http://localhost:5253/agoda](http://localhost:5253/agoda)
 
 ###### Fast AND accurate 😉
+
+##### Possible scraping tools
+
+* Puppeteer
+* Playwright
+
+More info: [https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/](https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/)
