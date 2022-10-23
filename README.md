@@ -15,6 +15,6 @@ npm install && node index.js
 ##### Possible scraping tools
 
 * Puppeteer
-* Playwright
+* Playwright (tends to be faster on real-world scenarios)
 
 More info: [https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/](https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/)
