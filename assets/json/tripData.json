@@ -1,18 +1,11 @@
 {
-    "hotel_name": "Artagonist Art Hotel",
-    "location": "Vilnius",
-    "country": "Lithuania",
-    "address": "Pilies g. 34, Senamiestis, LT-01123 Vilnius, Lietuva",
-    "zip": "01123",
-    "coordinates": [
-      "54.68183989",
-      "25.28924991"
-    ],
-    "check_in": "2022-10-28",
-    "check_out": "2022-10-30",
-    "currency": "EUR",
-    "adults": 2,
-    "children": [],
-    "language": "lt",
-    "no_rooms": 1
-  }
+	"hotel_name": "Moon Garden",
+	"location": "Vilnius",
+	"country": "Lithuania",
+	"check_in": "2022-12-24",
+	"check_out": "2022-12-26",
+	"currency": "EUR",
+	"adults": 2,
+	"children": [],
+	"no_rooms": 1
+}
