@@ -45,6 +45,13 @@ module.exports = async (request) => {
 		]);
 		await hotelPage.waitForLoadState();
 
+		if (!checkRegion(hotelPage.url(), request.location)) {
+			await browser.close();
+			return {
+				err: "Hotel not found",
+			};
+		}
+
 		//construct new url with matching hotel name
 		const finalUrl = adjustUrl(hotelPage.url(), request);
 
@@ -73,8 +80,8 @@ module.exports = async (request) => {
 };
 
 function adjustUrl(url, request) {
-	var splitParams = url.split("?");
-	return splitParams[0].concat(parseHotelParams(request));
+	const splitUrl = url.split("?");
+	return splitUrl[0].concat(parseHotelParams(request));
 }
 
 function parseHotelParams(request) {
@@ -92,6 +99,25 @@ function getNumberOfDays(checkIn, checkOut) {
 	const checkInDate = new Date(checkIn);
 	const checkOutDate = new Date(checkOut);
 	return (checkOutDate - checkInDate) / (1000 * 3600 * 24);
+}
+
+function checkRegion(url, location) {
+	const splitUrl = url.split("/");
+	let splitRegion = splitUrl[5].split(".");
+	splitRegion.pop();
+	const splitLocation = splitRegion.toString().split("-");
+	let finalLocation = "";
+
+	//if city is multi-word -> format string accordingly
+	if (splitLocation.length > 2) {
+		for (let i = 0; i < splitLocation.length - 1; i++) {
+			finalLocation = finalLocation.concat(splitLocation[i], "-");
+		}
+		finalLocation = finalLocation.slice(0, -1); //remove remaining - at the end
+	} else {
+		finalLocation = splitLocation[0];
+	}
+	return finalLocation === location.split(" ").join("-").toLowerCase(); //check if found hotel region matches request region
 }
 
 function isValid(param) {
