@@ -19,4 +19,4 @@ npm install && sudo npx playwright install-deps && node index.js
 
 More info: [https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/](https://blog.checklyhq.com/puppeteer-vs-selenium-vs-playwright-speed-comparison/)
 
-##### Issue - if hotel is not registered on Agoda.com, might return results of a hotel with a similar name in the surrounding area
+##### Issue - if hotel is not registered on Agoda.com, might return results of a hotel with a similar name in the surrounding area, otherwise - "Hotel not found"
