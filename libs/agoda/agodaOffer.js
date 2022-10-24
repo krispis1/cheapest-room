@@ -2,7 +2,7 @@ const playwright = require("playwright");
 
 module.exports = async (request) => {
 	const browser = await playwright.chromium.launch({
-		headless: false,
+		headless: true,
 	});
 
 	try {
