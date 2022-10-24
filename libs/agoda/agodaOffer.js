@@ -117,7 +117,7 @@ function checkRegion(url, location) {
 	} else {
 		finalLocation = splitLocation[0];
 	}
-	return finalLocation === location.split(" ").join("-").toLowerCase(); //check if found hotel region matches request region
+	return finalLocation === location.split(" ").join("-").toLowerCase(); //check if found hotel location matches request location
 }
 
 function isValid(param) {
