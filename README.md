@@ -8,7 +8,7 @@ Dummy trip data: `./assets/json/tripData.json`
 npm install && sudo npx playwright install-deps && node index.js
 ```
 
-- Agoda: [http://localhost:5253/agoda](http://localhost:9001/agoda)
+- Agoda: [http://localhost:9001/agoda](http://localhost:9001/agoda)
 
 ###### Fast AND accurate 😉
 
